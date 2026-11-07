@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru" data-course="self-coaching" data-lessons="01,02,03,04,05,06,07,08,09,10,11,12">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Еженедельный обзор · Самокоучинг</title>
+<meta name="description" content="Полчаса в неделю с собой: какие вопросы задавать и как не превратить обзор в галочку.">
+<meta property="og:title" content="Еженедельный обзор · Самокоучинг">
+<meta property="og:description" content="Полчаса в неделю с собой: какие вопросы задавать и как не превратить обзор в галочку.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#f8f5ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E🪞%3C/text%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('minicourse-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}})();</script>
+<style>
+:root{
+  --bg:#f8f5ef;--surface:#fffdf9;--surface-2:#f1ece3;--text:#1f1c18;--muted:#6a6358;--line:#e4dccf;
+  --accent:#b8502a;--accent-strong:#9a3f1d;--accent-ink:#fff;--accent-soft:#f6e4da;
+  --rule-bg:#eaf2ec;--rule-line:#4d7a5c;--done:#3f7a52;--done-soft:#e3f0e6;--focus:#1f6feb;
+  --shadow:0 1px 2px rgba(40,30,20,.06),0 4px 16px rgba(40,30,20,.06);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"PT Serif",Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151412;--surface:#1d1b18;--surface-2:#26231f;--text:#ece6dc;--muted:#a59d90;--line:#36322c;
+  --accent:#e58a63;--accent-strong:#f0a07d;--accent-ink:#1a120d;--accent-soft:#3a2519;
+  --rule-bg:#1c2a21;--rule-line:#82b893;--done:#82b893;--done-soft:#1f2f24;--focus:#79a8ff;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151412;--surface:#1d1b18;--surface-2:#26231f;--text:#ece6dc;--muted:#a59d90;--line:#36322c;
+  --accent:#e58a63;--accent-strong:#f0a07d;--accent-ink:#1a120d;--accent-soft:#3a2519;
+  --rule-bg:#1c2a21;--rule-line:#82b893;--done:#82b893;--done-soft:#1f2f24;--focus:#79a8ff;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:1.0625rem/1.65 var(--sans);text-rendering:optimizeLegibility}
+a{color:var(--accent-strong);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+.wide{max-width:60rem}
+header.top{border-bottom:1px solid var(--line);background:var(--surface)}
+header.top .wrap{display:flex;align-items:center;gap:12px;min-height:56px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.brand{font:600 1rem/1.3 var(--serif);color:var(--text);text-decoration:none;margin-right:auto;display:flex;gap:8px;align-items:center}
+.brand span.e{font-size:1.25rem}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{color:var(--muted);text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:8px}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--text);background:var(--surface-2)}
+button{font:inherit;color:inherit}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;width:36px;height:36px;display:inline-grid;place-items:center;cursor:pointer;color:var(--muted)}
+.icon-btn:hover{color:var(--text)}
+.icon-btn svg{width:18px;height:18px}
+.only-dark{display:none}
+:root[data-theme="dark"] .only-dark{display:inline}:root[data-theme="dark"] .only-light{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .only-dark{display:inline}:root:not([data-theme="light"]) .only-light{display:none}}
+main{padding:32px 0 56px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.25;font-weight:600;letter-spacing:-.005em}
+h1{font-size:clamp(1.9rem,5vw,2.6rem);margin:.2em 0 .4em}
+h2{font-size:1.45rem;margin:0 0 .6em}
+h3{font-size:1.2rem;margin:1.6em 0 .5em}
+h4{font-size:1.05rem;margin:1.4em 0 .4em}
+p{margin:0 0 1em}
+ul,ol{padding-left:1.4em;margin:0 0 1em}
+li{margin:.3em 0}
+li::marker{color:var(--muted)}
+blockquote{margin:0 0 1em;padding:.2em 0 .2em 1em;border-left:3px solid var(--line);color:var(--text)}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);padding:.1em .35em;border-radius:5px}
+pre{background:var(--surface-2);padding:12px 14px;border-radius:10px;overflow:auto}
+pre code{background:none;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.table{overflow-x:auto;margin:0 0 1em}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--surface-2)}
+.eyebrow{color:var(--muted);font-size:.9rem;margin:0;display:flex;gap:6px 14px;flex-wrap:wrap}
+.crumbs{font-size:.9rem;color:var(--muted);margin-bottom:18px}
+.crumbs a{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin:0 0 28px}
+.card>:last-child{margin-bottom:0}
+.lesson section{margin:0 0 32px}
+.lesson section.card{margin-bottom:28px}
+.summary ul{margin:0;padding-left:1.2em}
+.summary li{margin:.45em 0}
+.summary h2,.try h2,.rule h2{font-size:1.1rem;margin-bottom:.7em}
+.example{border-left:3px solid var(--accent);padding-left:18px}
+.sources-note{color:var(--muted);font-size:.97rem}
+.sources-note h2{color:var(--text)}
+.try{border-color:var(--accent);background:linear-gradient(var(--accent-soft),var(--accent-soft)) top/100% 4px no-repeat,var(--surface)}
+.try-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 10px;margin-bottom:.6em}
+.try-head h2{margin:0 auto 0 0}
+.chip{display:inline-block;font-size:.8rem;line-height:1;padding:6px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-strong);font-weight:600;white-space:nowrap}
+.try blockquote{border-left-color:var(--accent)}
+.rule{background:var(--rule-bg);border-color:transparent;box-shadow:none}
+.rule .text{font:500 1.2rem/1.45 var(--serif);margin:0 0 14px}
+.check{display:inline-flex;gap:10px;align-items:center;cursor:pointer;font-size:.95rem;color:var(--muted);user-select:none}
+.check input{width:20px;height:20px;accent-color:var(--rule-line);margin:0}
+.quiz{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin:0 0 10px}
+.quiz summary{cursor:pointer;padding:14px 18px;font-weight:600;list-style:none;display:flex;gap:12px;align-items:flex-start}
+.quiz summary::-webkit-details-marker{display:none}
+.quiz summary::before{content:"?";flex:none;width:24px;height:24px;border-radius:50%;background:var(--surface-2);color:var(--muted);display:grid;place-items:center;font-size:.85rem;margin-top:1px}
+.quiz[open] summary::before{content:"✓";background:var(--done-soft);color:var(--done)}
+.quiz .answer{padding:0 18px 14px 54px;color:var(--text)}
+.quiz .answer>:last-child{margin-bottom:0}
+.hint{color:var(--muted);font-size:.9rem;margin-top:-.4em}
+.further ul{padding-left:1.2em}
+.marks{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 14px}
+.toggle{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:.95rem}
+.toggle::before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid var(--muted)}
+.toggle[aria-pressed="true"]{background:var(--done-soft);border-color:var(--done);color:var(--done)}
+.toggle[aria-pressed="true"]::before{border-color:var(--done);background:var(--done);box-shadow:inset 0 0 0 2px var(--done-soft)}
+.skip{color:var(--muted);font-size:.9rem}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.pager a{display:block;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;color:var(--text);background:var(--surface)}
+.pager a:hover{border-color:var(--accent)}
+.pager small{display:block;color:var(--muted);font-size:.8rem}
+.pager .next{text-align:right;grid-column:2}
+.hero{padding:8px 0 8px}
+.hero .lead{font-size:1.2rem;color:var(--muted);max-width:38rem}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none}
+.stats li{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:12px}
+.btn:hover{background:var(--accent-strong);color:var(--accent-ink)}
+.progress{margin:22px 0 0}
+.bar{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:var(--done);transition:width .3s}
+.progress p{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+.note{background:var(--accent-soft);border-radius:12px;padding:12px 16px;margin:24px 0 0;font-size:.95rem}
+.how{color:var(--muted);margin:28px 0 0}
+.arc{margin:44px 0 0}
+.arc h2{margin-bottom:.2em}
+.arc .why{color:var(--muted);margin-bottom:16px}
+.lessons{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.lessons li{margin:0}
+.lcard{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:start;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-decoration:none;color:var(--text)}
+a.lcard:hover{border-color:var(--accent)}
+.lcard .num{width:32px;height:32px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;font-weight:600;font-size:.9rem;color:var(--muted);grid-row:span 2}
+.lcard .t{font-weight:600;font-family:var(--serif);font-size:1.08rem}
+.lcard .s{color:var(--muted);font-size:.93rem;grid-column:2}
+.lcard .m{color:var(--muted);font-size:.85rem;white-space:nowrap}
+.lcard.soon{opacity:.6;border-style:dashed;background:transparent}
+.is-read .num{background:var(--done);color:var(--surface)}
+.is-tried .m::after{content:" · ✓";color:var(--done)}
+.split{margin:0 0 14px}
+.split h3{margin-top:0}
+.split .decide{color:var(--muted);margin:0}
+.rules-list{list-style:none;padding:0;margin:0;counter-reset:r}
+.rules-list li{margin:0 0 12px}
+.rules-list .card{margin:0;display:grid;gap:10px}
+.rules-list .text{font:500 1.1rem/1.45 var(--serif)}
+.rules-list .from{font-size:.85rem;color:var(--muted)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}
+.plain-btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 14px;cursor:pointer;font-size:.92rem}
+.src{list-style:none;padding:0;margin:0}
+.src li{padding:12px 0;border-bottom:1px solid var(--line);margin:0}
+.src .d{color:var(--muted);font-size:.85rem}
+.src .in{font-size:.85rem;color:var(--muted)}
+.courses{list-style:none;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.courses li{margin:0}
+.ccard{display:flex;flex-direction:column;gap:8px;height:100%;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;color:var(--text);box-shadow:var(--shadow)}
+.ccard:hover{border-color:var(--accent)}
+.ccard .e{font-size:2rem;line-height:1}
+.ccard .t{font:600 1.2rem/1.3 var(--serif)}
+.ccard .s{color:var(--muted);font-size:.95rem;flex:1}
+.ccard .m{color:var(--muted);font-size:.85rem}
+footer.bottom{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:20px 0 32px}
+footer.bottom .wrap{display:flex;gap:6px 16px;flex-wrap:wrap}
+@media (max-width:560px){
+  body{font-size:1rem}
+  header.top .wrap{display:grid;grid-template-columns:1fr auto;gap:4px 8px}
+  .brand{margin:0;min-width:0}
+  nav.main{grid-column:1/-1;grid-row:2;flex-wrap:nowrap;overflow-x:auto;margin:0 -6px;scrollbar-width:none}
+  nav.main a{white-space:nowrap;padding:6px 8px}
+  .card{padding:16px}
+  .quiz .answer{padding-left:18px}
+  .pager{grid-template-columns:1fr}
+  .pager .next{grid-column:1}
+  .lcard{grid-template-columns:auto 1fr}
+  .lcard .m{grid-column:2}
+}
+@media print{
+  header.top,footer.bottom,.marks,.pager,.toolbar,.icon-btn,.skip,.check input{display:none!important}
+  body{background:#fff;color:#000}
+  .card{box-shadow:none;border-color:#ccc}
+  .quiz .answer{display:block}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap wide"><a class="brand" href="index.html"><span class="e" aria-hidden="true">🪞</span>Самокоучинг</a><nav class="main" aria-label="Course"><a href="index.html">Уроки</a><a href="rules.html">Мои правила</a><a href="sources.html">Источники</a><a href="../">Все курсы</a></nav>
+<button class="icon-btn" type="button" data-theme-toggle aria-label="Theme"><svg class="only-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="only-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></div></header>
+<main><article class="wrap lesson"><nav class="crumbs"><a href="index.html">Уроки</a> · Часть 3. Надолго и не в одиночку</nav><p class="eyebrow"><span>Урок 10 из 12</span><span>7 мин чтения</span></p><h1>Еженедельный обзор</h1><section class="card summary"><h2>Коротко</h2><ul><li>Многие свои ошибки вы заметили бы сами, если бы остановились и задали себе правильный вопрос. Еженедельный обзор превращает такую остановку в привычку, а не в дело «когда будет время».</li><li>Чтобы обзор прижился, нужны постоянное время, готовый список вопросов и короткие ответы. Начать проще всего с эксперимента на три недели.</li><li>Обзор, в котором только календарь и задачи, — уже галочка. В нём должны быть выводы, а каждый вывод — превращаться в шаг.</li></ul></section><section class="prose"><h2>Разбор</h2><p>Нил Нанда пишет в своём блоге, что многие его ошибки очевидны, стоит кому-то на них указать. Часто он заметил бы их и сам, если бы остановился и спросил себя. Беда не в том, что проблема глубока, а в том, что подумать, как вообще идут дела, никогда не кажется срочным. Поэтому новичкам он советует начать с еженедельного обзора (weekly review): постоянного времени, когда вы смотрите, как идёт жизнь и что стоит поменять.</p>
+<h4>Спрашивать так, будто ошибка была</h4>
+<p>Нанда замечает: ошибку в письме часто видишь сразу после того, как нажал «отправить». Письмо просто стало прошлым, а о прошлом думать легче. Отсюда его приём: спрашивать о неделе так, будто ошибка точно была. На вопрос «Ошибался ли я?» легко ответить «вроде нет». На вопрос «Какой была моя самая большая ошибка на этой неделе?» так не ответишь.</p>
+<h4>Три части обзора</h4>
+<p>Большинство авторов строят обзор примерно одинаково. Сначала итоги: что сделано, что получилось, что пошло не по плану. Потом выводы: чему вы научились, что откладываете, что отнимало силы. В конце — следующая неделя: главные дела и что сделать иначе.</p>
+<p>В готовых наборах много вопросов, у Нанды их больше десяти. Брать все сразу не стоит. Он сам оговаривается: правильные вопросы вырастают из ваших целей и привычных промахов. Тому, кто годами откладывает трудные разговоры, нужнее всего вопрос «Что я откладываю?».</p>
+<h4>Как сделать привычкой</h4>
+<p>В блоге планировщика Sunsama честно признают: обзор полезен, но держится плохо. Помогает убрать лишние решения. Нанда каждую субботу утром заполняет одну и ту же Google-форму: в обычном документе со списком он начинал переставлять и пропускать вопросы. По его словам, за последний год он не пропустил ни одной недели.</p>
+<p>Долго сидеть не нужно. В приложении-дневнике Mindsera считают, что хватает 10–20 минут, а в Sunsama советуют отвечать на каждый вопрос в 40–50 слов: чем проще обзор, тем дольше вы его продержите. День выберите по себе: в Sunsama предлагают вечер пятницы, в Mindsera — воскресенье. Важнее, чтобы он не менялся: регулярность выручает, когда мотивации нет.</p>
+<p>Если не уверены, что вам это нужно, Нанда предлагает эксперимент: три недели подряд, потом решить, есть ли польза.</p>
+<h4>Когда обзор становится галочкой</h4>
+<p>Роберт Полличино с марта 2017 года каждое утро понедельника писал недельный обзор. Документ разросся до 130 с лишним страниц. И однажды он заметил, что обзор стал ещё одним пунктом в списке дел. Он почти целиком состоял из календаря, задач и поручений: это был план на неделю, а не размышление. Как в спорте, рутину пришлось менять, чтобы не выйти на плато. После итогов недели он добавил четыре вопроса: чем горжусь, что получилось, что можно улучшить, какой главный урок.</p>
+<p>Вторая защита — сразу переводить ответы в действия. В одном из шаблонов есть правило трёх минут: если ответ можно выполнить за три минуты, например вписать тренировки в календарь, прервите обзор и сделайте это сразу.</p>
+<p>И последнее: обзор — не суд. В Sunsama советуют вместо «я провалил задачу» писать «на следующей неделе попробую другой способ».</p></section><section class="prose example"><h2>Пример</h2><p>Учебный пример. Анна решила три недели попробовать обзор. Она поставила в календарь повторяющееся событие: пятница, 17:30, 20 минут. Шесть вопросов записала в заметку на телефоне.</p>
+<p>В первую пятницу на вопрос «Какой была моя самая большая ошибка на этой неделе?» ответ пришёл не сразу. Потом вспомнилось: в понедельник она взялась за лишний проект, не посмотрев на свои сроки, и всю неделю догоняла остальное. На вопрос «Что я откладываю?» ответ был — разговор с руководителем о нагрузке.</p>
+<p>Вывод: прежде чем соглашаться, смотреть в календарь. Шаг: попросить у руководителя 15 минут во вторник. Сообщение заняло две минуты, и Анна отправила его, не закрывая заметку. После третьей недели она убрала один вопрос, ответы на который повторялись, и добавила «Кто меня поддержал на этой неделе?».</p></section><section class="sources-note"><h2>Что говорят источники</h2><p>Пять из одиннадцати источников, которые писали о регулярной рефлексии, советуют строить обзор из итогов, выводов и планов. По трое советуют закрепить его за постоянным временем, следить, чтобы он не стал галочкой, и переводить ответы в действия. Пять из четырнадцати предлагают задавать себе немного вопросов за раз и подгонять готовые наборы под себя. Против обзора не выступает никто; Таша Эурих спорит лишь с жёсткой регулярностью ежедневных записей (об этом пятый урок).</p>
+<p>Учтите, откуда эти советы. Это опыт практиков: личные блоги Нанды и Полличино, а также блоги Sunsama и Mindsera, которые продают инструменты для планирования и дневника. Исследований, где сравнивали бы людей с обзором и без, в наших источниках нет. Поэтому разумно и относиться к обзору как к эксперименту, а не как к проверенному методу.</p></section><section class="card try"><div class="try-head"><h2>Попробуйте</h2><span class="chip">Организационное</span><span class="chip">20 минут</span></div><ol><li>Выберите день и время, когда неделя уже позади, а силы ещё есть. Поставьте повторяющееся событие в календарь.</li><li>Скопируйте вопросы в заметку или форму. Уберите те, что вам не подходят, и добавьте один о своём привычном промахе.</li></ol>
+<blockquote><p>Что я сделал за неделю и что пошло не по плану?</p>
+<p>Какой была моя самая большая ошибка на этой неделе?</p>
+<p>Чем я горжусь?</p>
+<p>Что я откладываю?</p>
+<p>Какой главный урок недели?</p>
+<p>Какие три дела главные на следующей неделе?</p></blockquote>
+<ol start="3"><li>Проведите первый обзор прямо сейчас. На каждый вопрос — не больше 40–50 слов.</li><li>Если ответ превращается в дело на три минуты, сделайте его сразу. Остальное запишите как шаги на неделю.</li><li>Поставьте в календарь напоминание через три недели: «Обзор полезен? Что убрать, что добавить?»</li></ol></section><section class="card rule"><h2>Правило</h2><p class="text">Раз в неделю в одно и то же время я отвечаю себе на одни и те же вопросы и превращаю ответы в шаги.</p><label class="check"><input type="checkbox" data-mark="rule-10"> Беру в свои правила</label></section><section class="quiz-sec"><h2>Проверьте себя</h2><p class="hint">Подумайте, потом откройте</p><details class="quiz"><summary>Почему вопрос «Ошибался ли я на этой неделе?» хуже, чем «Какой была моя самая большая ошибка?»</summary><div class="answer"><p>На первый легко ответить «нет» и закрыть тему. Второй исходит из того, что ошибка была, и заставляет её найти.</p></div></details>
+<details class="quiz"><summary>Ваш обзор занимает час и состоит из расписания и списка задач. Что не так?</summary><div class="answer"><p>Это план, а не размышление: обзор стал галочкой. Добавьте после итогов вопросы-выводы, например «Какой главный урок недели?», и сократите остальное.</p></div></details>
+<details class="quiz"><summary>Три недели подряд вы отвечаете на один из вопросов одно и то же. Что с ним делать?</summary><div class="answer"><p>Убрать или заменить. Набор вопросов подгоняется под ваши цели и промахи, бесполезные можно спокойно удалять.</p></div></details></section><section class="further"><h2>Почитать подробнее</h2><ul><li><a href="https://neelnanda.io/blog/39-reflection" rel="noopener" target="_blank">Post 39: On Reflection</a> — Нил Нанда о еженедельном обзоре: вопросы, привычка, эксперимент на три недели.</li><li><a href="https://medium.com/@robert_pollicino/when-your-reflection-becomes-a-routine-its-time-to-recalibrate-af22d8098f0a" rel="noopener" target="_blank">When your reflection becomes a routine, it’s time to recalibrate</a> — короткая заметка Полличино о том, как обзор стал галочкой.</li><li><a href="https://sunsama.com/blog/how-to-do-weekly-review" rel="noopener" target="_blank">How to Conduct a Weekly Review to Do More of the Right Things</a> — когда проводить обзор, какие вопросы задавать и как не бросить; пишет компания-разработчик планировщика.</li><li><a href="https://medium.com/@jahying/weekly-review-952f6e540b86" rel="noopener" target="_blank">Weekly Review Questions</a> — шаблон обзора из трёх частей и правило трёх минут.</li></ul></section><div class="marks"><button class="toggle" type="button" data-mark="read-10">Прочитано</button><button class="toggle" type="button" data-mark="tried-10">Попробовано</button></div><p class="skip">Урок можно пропустить: ничего не сгорит, следующий урок просто следующий.</p><nav class="pager"><a class="prev" href="09-inner-critic.html"><small>← Назад</small>Друг, а не надзиратель</a><a class="next" href="11-outside-mirror.html"><small>Дальше →</small>Зеркало снаружи</a></nav></article></main>
+<footer class="bottom"><div class="wrap wide"><span>Самокоучинг</span><span>Обновлено: 2026-11-07</span><span>Курс собран навыком minicourse</span></div></footer>
+<script>
+(function(){
+  var root=document.documentElement, slug=root.getAttribute('data-course')||'';
+  function key(k){return 'minicourse:'+slug+':'+k}
+  function get(k){try{return localStorage.getItem(key(k))==='1'}catch(e){return false}}
+  function set(k,on){try{on?localStorage.setItem(key(k),'1'):localStorage.removeItem(key(k))}catch(e){}}
+  document.querySelectorAll('[data-theme-toggle]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var cur=root.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      root.dataset.theme=cur==='dark'?'light':'dark';
+      try{localStorage.setItem('minicourse-theme',root.dataset.theme)}catch(e){}
+    });
+  });
+  document.querySelectorAll('[data-mark]').forEach(function(el){
+    var k=el.getAttribute('data-mark');
+    if(el.type==='checkbox'){
+      el.checked=get(k);
+      el.addEventListener('change',function(){set(k,el.checked);sync()});
+    }else{
+      el.setAttribute('aria-pressed',get(k)?'true':'false');
+      el.addEventListener('click',function(){var on=el.getAttribute('aria-pressed')!=='true';el.setAttribute('aria-pressed',on?'true':'false');set(k,on);sync()});
+    }
+  });
+  function sync(){
+    var ids=(root.getAttribute('data-lessons')||'').split(',').filter(Boolean);
+    document.querySelectorAll('[data-lesson]').forEach(function(el){
+      var n=el.getAttribute('data-lesson');
+      el.classList.toggle('is-read',get('read-'+n));
+      el.classList.toggle('is-tried',get('tried-'+n));
+    });
+    var read=0,tried=0,kept=0,next=null;
+    ids.forEach(function(n){if(get('read-'+n))read++;else if(!next)next=n;if(get('tried-'+n))tried++;if(get('rule-'+n))kept++});
+    var bar=document.querySelector('[data-progress-bar]');
+    if(bar)bar.style.width=(ids.length?Math.round(read*100/ids.length):0)+'%';
+    var txt=document.querySelector('[data-progress-text]');
+    if(txt)txt.textContent=txt.getAttribute('data-template').replace('{read}',read).replace('{total}',ids.length).replace('{tried}',tried).replace('{kept}',kept);
+    var cta=document.querySelector('[data-cta]');
+    if(cta&&read>0&&next){var a=document.querySelector('[data-lesson="'+next+'"]');if(a&&a.getAttribute('href')){cta.href=a.getAttribute('href');cta.textContent=cta.getAttribute('data-continue')}}
+  }
+  var reset=document.querySelector('[data-reset]');
+  if(reset)reset.addEventListener('click',function(){
+    if(!confirm(reset.getAttribute('data-confirm')))return;
+    try{Object.keys(localStorage).forEach(function(k){if(k.indexOf('minicourse:'+slug+':')===0)localStorage.removeItem(k)})}catch(e){}
+    location.reload();
+  });
+  var pr=document.querySelector('[data-print]');
+  if(pr)pr.addEventListener('click',function(){window.print()});
+  sync();
+})();
+</script>
+</body>
+</html>
