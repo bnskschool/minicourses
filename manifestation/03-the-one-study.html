@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru" data-course="manifestation" data-lessons="01,02,03,04,05,06,07,08,09,10,11,12">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Единственное исследование · Манифестация без магии</title>
+<meta name="description" content="Что выяснили учёные о людях, которые верят в манифестацию: чувство успеха, риск и банкротства.">
+<meta property="og:title" content="Единственное исследование · Манифестация без магии">
+<meta property="og:description" content="Что выяснили учёные о людях, которые верят в манифестацию: чувство успеха, риск и банкротства.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#f8f5ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E✨%3C/text%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('minicourse-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}})();</script>
+<style>
+:root{
+  --bg:#f8f5ef;--surface:#fffdf9;--surface-2:#f1ece3;--text:#1f1c18;--muted:#6a6358;--line:#e4dccf;
+  --accent:#b8502a;--accent-strong:#9a3f1d;--accent-ink:#fff;--accent-soft:#f6e4da;
+  --rule-bg:#eaf2ec;--rule-line:#4d7a5c;--done:#3f7a52;--done-soft:#e3f0e6;--focus:#1f6feb;
+  --shadow:0 1px 2px rgba(40,30,20,.06),0 4px 16px rgba(40,30,20,.06);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"PT Serif",Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151412;--surface:#1d1b18;--surface-2:#26231f;--text:#ece6dc;--muted:#a59d90;--line:#36322c;
+  --accent:#e58a63;--accent-strong:#f0a07d;--accent-ink:#1a120d;--accent-soft:#3a2519;
+  --rule-bg:#1c2a21;--rule-line:#82b893;--done:#82b893;--done-soft:#1f2f24;--focus:#79a8ff;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151412;--surface:#1d1b18;--surface-2:#26231f;--text:#ece6dc;--muted:#a59d90;--line:#36322c;
+  --accent:#e58a63;--accent-strong:#f0a07d;--accent-ink:#1a120d;--accent-soft:#3a2519;
+  --rule-bg:#1c2a21;--rule-line:#82b893;--done:#82b893;--done-soft:#1f2f24;--focus:#79a8ff;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:1.0625rem/1.65 var(--sans);text-rendering:optimizeLegibility}
+a{color:var(--accent-strong);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+.wide{max-width:60rem}
+header.top{border-bottom:1px solid var(--line);background:var(--surface)}
+header.top .wrap{display:flex;align-items:center;gap:12px;min-height:56px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.brand{font:600 1rem/1.3 var(--serif);color:var(--text);text-decoration:none;margin-right:auto;display:flex;gap:8px;align-items:center}
+.brand span.e{font-size:1.25rem}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{color:var(--muted);text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:8px}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--text);background:var(--surface-2)}
+button{font:inherit;color:inherit}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;width:36px;height:36px;display:inline-grid;place-items:center;cursor:pointer;color:var(--muted)}
+.icon-btn:hover{color:var(--text)}
+.icon-btn svg{width:18px;height:18px}
+.only-dark{display:none}
+:root[data-theme="dark"] .only-dark{display:inline}:root[data-theme="dark"] .only-light{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .only-dark{display:inline}:root:not([data-theme="light"]) .only-light{display:none}}
+main{padding:32px 0 56px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.25;font-weight:600;letter-spacing:-.005em}
+h1{font-size:clamp(1.9rem,5vw,2.6rem);margin:.2em 0 .4em}
+h2{font-size:1.45rem;margin:0 0 .6em}
+h3{font-size:1.2rem;margin:1.6em 0 .5em}
+h4{font-size:1.05rem;margin:1.4em 0 .4em}
+p{margin:0 0 1em}
+ul,ol{padding-left:1.4em;margin:0 0 1em}
+li{margin:.3em 0}
+li::marker{color:var(--muted)}
+blockquote{margin:0 0 1em;padding:.2em 0 .2em 1em;border-left:3px solid var(--line);color:var(--text)}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);padding:.1em .35em;border-radius:5px}
+pre{background:var(--surface-2);padding:12px 14px;border-radius:10px;overflow:auto}
+pre code{background:none;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.table{overflow-x:auto;margin:0 0 1em}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--surface-2)}
+.eyebrow{color:var(--muted);font-size:.9rem;margin:0;display:flex;gap:6px 14px;flex-wrap:wrap}
+.crumbs{font-size:.9rem;color:var(--muted);margin-bottom:18px}
+.crumbs a{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin:0 0 28px}
+.card>:last-child{margin-bottom:0}
+.lesson section{margin:0 0 32px}
+.lesson section.card{margin-bottom:28px}
+.summary ul{margin:0;padding-left:1.2em}
+.summary li{margin:.45em 0}
+.summary h2,.try h2,.rule h2{font-size:1.1rem;margin-bottom:.7em}
+.example{border-left:3px solid var(--accent);padding-left:18px}
+.sources-note{color:var(--muted);font-size:.97rem}
+.sources-note h2{color:var(--text)}
+.try{border-color:var(--accent);background:linear-gradient(var(--accent-soft),var(--accent-soft)) top/100% 4px no-repeat,var(--surface)}
+.try-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 10px;margin-bottom:.6em}
+.try-head h2{margin:0 auto 0 0}
+.chip{display:inline-block;font-size:.8rem;line-height:1;padding:6px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-strong);font-weight:600;white-space:nowrap}
+.try blockquote{border-left-color:var(--accent)}
+.rule{background:var(--rule-bg);border-color:transparent;box-shadow:none}
+.rule .text{font:500 1.2rem/1.45 var(--serif);margin:0 0 14px}
+.check{display:inline-flex;gap:10px;align-items:center;cursor:pointer;font-size:.95rem;color:var(--muted);user-select:none}
+.check input{width:20px;height:20px;accent-color:var(--rule-line);margin:0}
+.quiz{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin:0 0 10px}
+.quiz summary{cursor:pointer;padding:14px 18px;font-weight:600;list-style:none;display:flex;gap:12px;align-items:flex-start}
+.quiz summary::-webkit-details-marker{display:none}
+.quiz summary::before{content:"?";flex:none;width:24px;height:24px;border-radius:50%;background:var(--surface-2);color:var(--muted);display:grid;place-items:center;font-size:.85rem;margin-top:1px}
+.quiz[open] summary::before{content:"✓";background:var(--done-soft);color:var(--done)}
+.quiz .answer{padding:0 18px 14px 54px;color:var(--text)}
+.quiz .answer>:last-child{margin-bottom:0}
+.hint{color:var(--muted);font-size:.9rem;margin-top:-.4em}
+.further ul{padding-left:1.2em}
+.marks{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 14px}
+.toggle{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:.95rem}
+.toggle::before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid var(--muted)}
+.toggle[aria-pressed="true"]{background:var(--done-soft);border-color:var(--done);color:var(--done)}
+.toggle[aria-pressed="true"]::before{border-color:var(--done);background:var(--done);box-shadow:inset 0 0 0 2px var(--done-soft)}
+.skip{color:var(--muted);font-size:.9rem}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.pager a{display:block;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;color:var(--text);background:var(--surface)}
+.pager a:hover{border-color:var(--accent)}
+.pager small{display:block;color:var(--muted);font-size:.8rem}
+.pager .next{text-align:right;grid-column:2}
+.hero{padding:8px 0 8px}
+.hero .lead{font-size:1.2rem;color:var(--muted);max-width:38rem}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none}
+.stats li{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:12px}
+.btn:hover{background:var(--accent-strong);color:var(--accent-ink)}
+.progress{margin:22px 0 0}
+.bar{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:var(--done);transition:width .3s}
+.progress p{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+.note{background:var(--accent-soft);border-radius:12px;padding:12px 16px;margin:24px 0 0;font-size:.95rem}
+.how{color:var(--muted);margin:28px 0 0}
+.arc{margin:44px 0 0}
+.arc h2{margin-bottom:.2em}
+.arc .why{color:var(--muted);margin-bottom:16px}
+.lessons{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.lessons li{margin:0}
+.lcard{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:start;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-decoration:none;color:var(--text)}
+a.lcard:hover{border-color:var(--accent)}
+.lcard .num{width:32px;height:32px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;font-weight:600;font-size:.9rem;color:var(--muted);grid-row:span 2}
+.lcard .t{font-weight:600;font-family:var(--serif);font-size:1.08rem}
+.lcard .s{color:var(--muted);font-size:.93rem;grid-column:2}
+.lcard .m{color:var(--muted);font-size:.85rem;white-space:nowrap}
+.lcard.soon{opacity:.6;border-style:dashed;background:transparent}
+.is-read .num{background:var(--done);color:var(--surface)}
+.is-tried .m::after{content:" · ✓";color:var(--done)}
+.split{margin:0 0 14px}
+.split h3{margin-top:0}
+.split .decide{color:var(--muted);margin:0}
+.rules-list{list-style:none;padding:0;margin:0;counter-reset:r}
+.rules-list li{margin:0 0 12px}
+.rules-list .card{margin:0;display:grid;gap:10px}
+.rules-list .text{font:500 1.1rem/1.45 var(--serif)}
+.rules-list .from{font-size:.85rem;color:var(--muted)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}
+.plain-btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 14px;cursor:pointer;font-size:.92rem}
+.src{list-style:none;padding:0;margin:0}
+.src li{padding:12px 0;border-bottom:1px solid var(--line);margin:0}
+.src .d{color:var(--muted);font-size:.85rem}
+.src .in{font-size:.85rem;color:var(--muted)}
+.courses{list-style:none;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.courses li{margin:0}
+.ccard{display:flex;flex-direction:column;gap:8px;height:100%;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;color:var(--text);box-shadow:var(--shadow)}
+.ccard:hover{border-color:var(--accent)}
+.ccard .e{font-size:2rem;line-height:1}
+.ccard .t{font:600 1.2rem/1.3 var(--serif)}
+.ccard .s{color:var(--muted);font-size:.95rem;flex:1}
+.ccard .m{color:var(--muted);font-size:.85rem}
+footer.bottom{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:20px 0 32px}
+footer.bottom .wrap{display:flex;gap:6px 16px;flex-wrap:wrap}
+@media (max-width:560px){
+  body{font-size:1rem}
+  header.top .wrap{display:grid;grid-template-columns:1fr auto;gap:4px 8px}
+  .brand{margin:0;min-width:0}
+  nav.main{grid-column:1/-1;grid-row:2;flex-wrap:nowrap;overflow-x:auto;margin:0 -6px;scrollbar-width:none}
+  nav.main a{white-space:nowrap;padding:6px 8px}
+  .card{padding:16px}
+  .quiz .answer{padding-left:18px}
+  .pager{grid-template-columns:1fr}
+  .pager .next{grid-column:1}
+  .lcard{grid-template-columns:auto 1fr}
+  .lcard .m{grid-column:2}
+}
+@media print{
+  header.top,footer.bottom,.marks,.pager,.toolbar,.icon-btn,.skip,.check input{display:none!important}
+  body{background:#fff;color:#000}
+  .card{box-shadow:none;border-color:#ccc}
+  .quiz .answer{display:block}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap wide"><a class="brand" href="index.html"><span class="e" aria-hidden="true">✨</span>Манифестация без магии</a><nav class="main" aria-label="Course"><a href="index.html">Уроки</a><a href="rules.html">Мои правила</a><a href="sources.html">Источники</a><a href="../">Все курсы</a></nav>
+<button class="icon-btn" type="button" data-theme-toggle aria-label="Theme"><svg class="only-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="only-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></div></header>
+<main><article class="wrap lesson"><nav class="crumbs"><a href="index.html">Уроки</a> · Часть 1. Что это такое</nav><p class="eyebrow"><span>Урок 3 из 12</span><span>6 мин чтения</span></p><h1>Единственное исследование</h1><section class="card summary"><h2>Коротко</h2><ul><li>Прямое исследование тех, кто верит в манифестацию, в наших источниках одно: Лукас Диксон и коллеги из Квинслендского университета, 1023 американца. Верит примерно треть.</li><li>Верящие считают себя успешнее и ждут большего от будущего, но ни доход, ни образование у них не выше. Зато они чаще рискуют деньгами и чаще были банкротами.</li><li>Это корреляции и ответы самих участников. Исследование не доказывает, что манифестация разоряет. Оно показывает, что чувство успеха и успех расходятся.</li></ul></section><section class="prose"><h2>Разбор</h2><h4>Как измерить веру</h4>
+<p>Ролики о манифестации смотрят очень много: по подсчётам авторов, к маю 2023 года ролики с тегом «manifestation» в TikTok набрали 34,6 миллиарда просмотров. А исследований почти нет. Лукас Диксон из бизнес-школы Квинслендского университета, Мэтью Хорнси и Николь Хартли решили начать с простого: научиться измерять саму веру.</p>
+<p>Они составили шкалу из 11 утверждений. Одна её часть — «личная сила»: например, «если я представляю успешный исход, он становится ближе». Другая — «сотрудничество с космосом»: «я прошу Вселенную или высшие силы послать мне успех». Статья вышла в 2023 году в журнале Personality and Social Psychology Bulletin.</p>
+<h4>Что нашли</h4>
+<p>Исследований было три, участников — 1023, все из США. Какую-то веру в манифестацию разделяли 35% участников первой выборки. С возрастом, полом и доходом она не была связана. Во втором исследовании проверили, что именно меряет шкала. Она отчасти пересекалась с верой в карму, но сильнее всего была связана с симпатией к Ронде Берн и Опре Уинфри, известным сторонницам манифестации.</p>
+<p>Верящие считали себя более успешными и ждали ещё большего успеха в будущем, даже когда до него было далеко. Но по доходу и образованию они не отличались от остальных. «Объективных доказательств, что манифестация работает, мы не нашли», — говорит Диксон в пресс-релизе университета.</p>
+<p>В третьем исследовании, на 375 участниках, авторы спросили о деньгах. Верящие чаще владели криптовалютой, хотя акции у них были не чаще, чем у других. Они чаще считали, что можно быстро разбогатеть, и чаще проходили через банкротство. Им предлагали сценарий, который авторы специально сделали маловероятным: зарабатывать 300 000 долларов в год благодаря аудитории больше чем в 100 000 поклонников. Верящие чаще считали его реальным. Соавтор Николь Хартли добавляет, что их оптимизм держался, даже когда с деньгами было плохо.</p>
+<h4>Чего исследование не доказывает</h4>
+<p>Оговорок много, и сами авторы о них пишут. Это корреляции: из них не следует, что вера толкает к риску. Может быть и наоборот, а может, обе вещи связаны с чем-то третьим. Успех участники оценивали сами, а верящие могли отвечать бодрее как раз потому, что манифестируют: так они «притягивают» успех. Выборка только американская. И главное, никто ещё не учил людей манифестировать, чтобы сравнить их с теми, кто не учился. Такой эксперимент трудно поставить.</p>
+<p>О том, почему самоотчёты завышают пользу, шла речь в <a href="../coaching-basics/12-sober-view.html">уроке «Трезво о коучинге»</a>. Здесь логика та же.</p>
+<h4>Типичная ошибка</h4>
+<p>Пересказывать работу как «учёные доказали, что манифестация разоряет». Доказано меньше: у верящих чаще встречаются рискованные решения и банкротства. Но и обратная крайность неверна: одна корреляционная работа — всё же данные, а не пустое место.</p></section><section class="prose example"><h2>Пример</h2><p>Учебный пример. Тимур уверен, что движется к успеху: каждое утро он представляет себя владельцем своей студии и чувствует, что всё уже близко. В ленте ему попадается курс «Манифестируй деньги через крипту», и он думает вложить в монету половину накоплений.</p>
+<p>Перед покупкой Тимур проходит тест из пяти утверждений шкалы Диксона и набирает в среднем 5,2. Тогда он сверяет чувство с цифрами: доход за год не вырос, а клиентов стало на двух меньше. Он понимает, что уверенность у него есть, а подтверждения нет. Тимур оставляет накопления в покое и выписывает, что нужно, чтобы найти ещё трёх клиентов.</p></section><section class="sources-note"><h2>Что говорят источники</h2><p>Пять из семи источников, которые пишут о прямых данных о манифестации, пересказывают это исследование: верящие считают себя успешнее, но успешнее не становятся. Четыре из семи отдельно пишут о риске и банкротствах. Против не выступает никто, и никто из согласных ничего не продаёт.</p>
+<p>Честная оговорка: пять источников — это не пять исследований. Пресс-релиз университета и заметка Phys.org — один и тот же текст, а дайджест Британского психологического общества, журнал In-Mind и Википедия пересказывают ту же работу. Независимых проверок в наших источниках нет.</p></section><section class="card try"><div class="try-head"><h2>Попробуйте</h2><span class="chip">Быстрая победа</span><span class="chip">5 минут</span></div><ol><li>Оцените каждое утверждение от 1 («совсем не согласен») до 7 («полностью согласен»):</li></ol>
+<blockquote><ol><li><p>Если я представляю успешный исход, он становится ближе.</p></li><li><p>Я могу «наговорить» себе успех позитивными словами.</p></li><li><p>Успех скорее придёт, если вести себя так, будто он уже случился.</p></li><li><p>Я прошу Вселенную или высшие силы послать мне успех.</p></li><li>Чтобы притянуть успех, я настраиваюсь на космические силы или энергии.</li></ol></blockquote>
+<ol start="2"><li>Посчитайте среднее. По версии журнала In-Mind, если оно выше 4, вас можно отнести к «команде манифестации».</li><li>Каким бы ни был результат, вспомните последнее крупное денежное решение и ответьте: на что я опирался(-ась), на чувство или на цифры?</li></ol></section><section class="card rule"><h2>Правило</h2><p class="text">Чувство успеха я сверяю с фактами: само по себе оно ещё не успех.</p><label class="check"><input type="checkbox" data-mark="rule-03"> Беру в свои правила</label></section><section class="quiz-sec"><h2>Проверьте себя</h2><p class="hint">Подумайте, потом откройте</p><details class="quiz"><summary>Знакомый говорит: «Учёные доказали, что манифестация ведёт к банкротству». Что не так?</summary><div class="answer"><p>Исследование корреляционное: верящие чаще были банкротами, но причина и следствие не установлены.</p></div></details>
+<details class="quiz"><summary>Почему высокая самооценка успеха у верящих ничего не доказывает?</summary><div class="answer"><p>Это их собственный ответ. Доход и образование у них не выше, а бодрый ответ может быть частью самой практики.</p></div></details>
+<details class="quiz"><summary>Вы набрали в тесте больше 4 и собираетесь вложить деньги в обещание быстрого дохода. Что стоит сделать?</summary><div class="answer"><p>Сверить ожидания с цифрами: доходами, рисками, тем, что будет при потере. Исследование показывает, что вера в манифестацию связана как раз с такими решениями.</p></div></details></section><section class="further"><h2>Почитать подробнее</h2><ul><li><a href="https://www.bps.org.uk/research-digest/manifestation-believe-and-achieve" rel="noopener" target="_blank">Manifestation: Believe and achieve?</a> — подробный пересказ всех трёх исследований и их ограничений.</li><li><a href="https://news.uq.edu.au/2023-09-20-manifesting-your-way-bankruptcy" rel="noopener" target="_blank">Manifesting your way to bankruptcy</a> — пресс-релиз университета с комментариями авторов.</li></ul></section><div class="marks"><button class="toggle" type="button" data-mark="read-03">Прочитано</button><button class="toggle" type="button" data-mark="tried-03">Попробовано</button></div><p class="skip">Урок можно пропустить: ничего не сгорит, следующий урок просто следующий.</p><nav class="pager"><a class="prev" href="02-why-we-believe.html"><small>← Назад</small>Почему в это хочется верить</a><a class="next" href="04-why-it-seems.html"><small>Дальше →</small>Почему кажется, что сбылось</a></nav></article></main>
+<footer class="bottom"><div class="wrap wide"><span>Манифестация без магии</span><span>Обновлено: 2026-11-08</span><span>Курс собран навыком minicourse</span></div></footer>
+<script>
+(function(){
+  var root=document.documentElement, slug=root.getAttribute('data-course')||'';
+  function key(k){return 'minicourse:'+slug+':'+k}
+  function get(k){try{return localStorage.getItem(key(k))==='1'}catch(e){return false}}
+  function set(k,on){try{on?localStorage.setItem(key(k),'1'):localStorage.removeItem(key(k))}catch(e){}}
+  document.querySelectorAll('[data-theme-toggle]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var cur=root.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      root.dataset.theme=cur==='dark'?'light':'dark';
+      try{localStorage.setItem('minicourse-theme',root.dataset.theme)}catch(e){}
+    });
+  });
+  document.querySelectorAll('[data-mark]').forEach(function(el){
+    var k=el.getAttribute('data-mark');
+    if(el.type==='checkbox'){
+      el.checked=get(k);
+      el.addEventListener('change',function(){set(k,el.checked);sync()});
+    }else{
+      el.setAttribute('aria-pressed',get(k)?'true':'false');
+      el.addEventListener('click',function(){var on=el.getAttribute('aria-pressed')!=='true';el.setAttribute('aria-pressed',on?'true':'false');set(k,on);sync()});
+    }
+  });
+  function sync(){
+    var ids=(root.getAttribute('data-lessons')||'').split(',').filter(Boolean);
+    document.querySelectorAll('[data-lesson]').forEach(function(el){
+      var n=el.getAttribute('data-lesson');
+      el.classList.toggle('is-read',get('read-'+n));
+      el.classList.toggle('is-tried',get('tried-'+n));
+    });
+    var read=0,tried=0,kept=0,next=null;
+    ids.forEach(function(n){if(get('read-'+n))read++;else if(!next)next=n;if(get('tried-'+n))tried++;if(get('rule-'+n))kept++});
+    var bar=document.querySelector('[data-progress-bar]');
+    if(bar)bar.style.width=(ids.length?Math.round(read*100/ids.length):0)+'%';
+    var txt=document.querySelector('[data-progress-text]');
+    if(txt)txt.textContent=txt.getAttribute('data-template').replace('{read}',read).replace('{total}',ids.length).replace('{tried}',tried).replace('{kept}',kept);
+    var cta=document.querySelector('[data-cta]');
+    if(cta&&read>0&&next){var a=document.querySelector('[data-lesson="'+next+'"]');if(a&&a.getAttribute('href')){cta.href=a.getAttribute('href');cta.textContent=cta.getAttribute('data-continue')}}
+  }
+  var reset=document.querySelector('[data-reset]');
+  if(reset)reset.addEventListener('click',function(){
+    if(!confirm(reset.getAttribute('data-confirm')))return;
+    try{Object.keys(localStorage).forEach(function(k){if(k.indexOf('minicourse:'+slug+':')===0)localStorage.removeItem(k)})}catch(e){}
+    location.reload();
+  });
+  var pr=document.querySelector('[data-print]');
+  if(pr)pr.addEventListener('click',function(){window.print()});
+  sync();
+})();
+</script>
+</body>
+</html>
