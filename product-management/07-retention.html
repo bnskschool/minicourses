@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru" data-course="product-management" data-lessons="01,02,03,04,05,06,07,08,09,10,11,12">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Остаются ли люди · Продакт-менеджмент с нуля</title>
+<meta name="description" content="Как читать удержание по когортам, с чем его сравнивать и как спросить людей, расстроятся ли они без продукта.">
+<meta property="og:title" content="Остаются ли люди · Продакт-менеджмент с нуля">
+<meta property="og:description" content="Как читать удержание по когортам, с чем его сравнивать и как спросить людей, расстроятся ли они без продукта.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#f8f5ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E🧭%3C/text%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('minicourse-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}})();</script>
+<style>
+:root{
+  --bg:#f8f5ef;--surface:#fffdf9;--surface-2:#f1ece3;--text:#1f1c18;--muted:#6a6358;--line:#e4dccf;
+  --accent:#b8502a;--accent-strong:#9a3f1d;--accent-ink:#fff;--accent-soft:#f6e4da;
+  --rule-bg:#eaf2ec;--rule-line:#4d7a5c;--done:#3f7a52;--done-soft:#e3f0e6;--focus:#1f6feb;
+  --shadow:0 1px 2px rgba(40,30,20,.06),0 4px 16px rgba(40,30,20,.06);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"PT Serif",Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151412;--surface:#1d1b18;--surface-2:#26231f;--text:#ece6dc;--muted:#a59d90;--line:#36322c;
+  --accent:#e58a63;--accent-strong:#f0a07d;--accent-ink:#1a120d;--accent-soft:#3a2519;
+  --rule-bg:#1c2a21;--rule-line:#82b893;--done:#82b893;--done-soft:#1f2f24;--focus:#79a8ff;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151412;--surface:#1d1b18;--surface-2:#26231f;--text:#ece6dc;--muted:#a59d90;--line:#36322c;
+  --accent:#e58a63;--accent-strong:#f0a07d;--accent-ink:#1a120d;--accent-soft:#3a2519;
+  --rule-bg:#1c2a21;--rule-line:#82b893;--done:#82b893;--done-soft:#1f2f24;--focus:#79a8ff;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:1.0625rem/1.65 var(--sans);text-rendering:optimizeLegibility}
+a{color:var(--accent-strong);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+.wide{max-width:60rem}
+header.top{border-bottom:1px solid var(--line);background:var(--surface)}
+header.top .wrap{display:flex;align-items:center;gap:12px;min-height:56px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.brand{font:600 1rem/1.3 var(--serif);color:var(--text);text-decoration:none;margin-right:auto;display:flex;gap:8px;align-items:center}
+.brand span.e{font-size:1.25rem}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{color:var(--muted);text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:8px}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--text);background:var(--surface-2)}
+button{font:inherit;color:inherit}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;width:36px;height:36px;display:inline-grid;place-items:center;cursor:pointer;color:var(--muted)}
+.icon-btn:hover{color:var(--text)}
+.icon-btn svg{width:18px;height:18px}
+.only-dark{display:none}
+:root[data-theme="dark"] .only-dark{display:inline}:root[data-theme="dark"] .only-light{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .only-dark{display:inline}:root:not([data-theme="light"]) .only-light{display:none}}
+main{padding:32px 0 56px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.25;font-weight:600;letter-spacing:-.005em}
+h1{font-size:clamp(1.9rem,5vw,2.6rem);margin:.2em 0 .4em}
+h2{font-size:1.45rem;margin:0 0 .6em}
+h3{font-size:1.2rem;margin:1.6em 0 .5em}
+h4{font-size:1.05rem;margin:1.4em 0 .4em}
+p{margin:0 0 1em}
+ul,ol{padding-left:1.4em;margin:0 0 1em}
+li{margin:.3em 0}
+li::marker{color:var(--muted)}
+blockquote{margin:0 0 1em;padding:.2em 0 .2em 1em;border-left:3px solid var(--line);color:var(--text)}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);padding:.1em .35em;border-radius:5px}
+pre{background:var(--surface-2);padding:12px 14px;border-radius:10px;overflow:auto}
+pre code{background:none;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.table{overflow-x:auto;margin:0 0 1em}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-weight:600;background:var(--surface-2)}
+.eyebrow{color:var(--muted);font-size:.9rem;margin:0;display:flex;gap:6px 14px;flex-wrap:wrap}
+.crumbs{font-size:.9rem;color:var(--muted);margin-bottom:18px}
+.crumbs a{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin:0 0 28px}
+.card>:last-child{margin-bottom:0}
+.lesson section{margin:0 0 32px}
+.lesson section.card{margin-bottom:28px}
+.summary ul{margin:0;padding-left:1.2em}
+.summary li{margin:.45em 0}
+.summary h2,.try h2,.rule h2{font-size:1.1rem;margin-bottom:.7em}
+.example{border-left:3px solid var(--accent);padding-left:18px}
+.sources-note{color:var(--muted);font-size:.97rem}
+.sources-note h2{color:var(--text)}
+.try{border-color:var(--accent);background:linear-gradient(var(--accent-soft),var(--accent-soft)) top/100% 4px no-repeat,var(--surface)}
+.try-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 10px;margin-bottom:.6em}
+.try-head h2{margin:0 auto 0 0}
+.chip{display:inline-block;font-size:.8rem;line-height:1;padding:6px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-strong);font-weight:600;white-space:nowrap}
+.try blockquote{border-left-color:var(--accent)}
+.rule{background:var(--rule-bg);border-color:transparent;box-shadow:none}
+.rule .text{font:500 1.2rem/1.45 var(--serif);margin:0 0 14px}
+.check{display:inline-flex;gap:10px;align-items:center;cursor:pointer;font-size:.95rem;color:var(--muted);user-select:none}
+.check input{width:20px;height:20px;accent-color:var(--rule-line);margin:0}
+.quiz{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin:0 0 10px}
+.quiz summary{cursor:pointer;padding:14px 18px;font-weight:600;list-style:none;display:flex;gap:12px;align-items:flex-start}
+.quiz summary::-webkit-details-marker{display:none}
+.quiz summary::before{content:"?";flex:none;width:24px;height:24px;border-radius:50%;background:var(--surface-2);color:var(--muted);display:grid;place-items:center;font-size:.85rem;margin-top:1px}
+.quiz[open] summary::before{content:"✓";background:var(--done-soft);color:var(--done)}
+.quiz .answer{padding:0 18px 14px 54px;color:var(--text)}
+.quiz .answer>:last-child{margin-bottom:0}
+.hint{color:var(--muted);font-size:.9rem;margin-top:-.4em}
+.further ul{padding-left:1.2em}
+.marks{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 14px}
+.toggle{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:.95rem}
+.toggle::before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid var(--muted)}
+.toggle[aria-pressed="true"]{background:var(--done-soft);border-color:var(--done);color:var(--done)}
+.toggle[aria-pressed="true"]::before{border-color:var(--done);background:var(--done);box-shadow:inset 0 0 0 2px var(--done-soft)}
+.skip{color:var(--muted);font-size:.9rem}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.pager a{display:block;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;color:var(--text);background:var(--surface)}
+.pager a:hover{border-color:var(--accent)}
+.pager small{display:block;color:var(--muted);font-size:.8rem}
+.pager .next{text-align:right;grid-column:2}
+.hero{padding:8px 0 8px}
+.hero .lead{font-size:1.2rem;color:var(--muted);max-width:38rem}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none}
+.stats li{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:12px}
+.btn:hover{background:var(--accent-strong);color:var(--accent-ink)}
+.progress{margin:22px 0 0}
+.bar{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:var(--done);transition:width .3s}
+.progress p{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+.note{background:var(--accent-soft);border-radius:12px;padding:12px 16px;margin:24px 0 0;font-size:.95rem}
+.how{color:var(--muted);margin:28px 0 0}
+.arc{margin:44px 0 0}
+.arc h2{margin-bottom:.2em}
+.arc .why{color:var(--muted);margin-bottom:16px}
+.lessons{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.lessons li{margin:0}
+.lcard{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:start;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-decoration:none;color:var(--text)}
+a.lcard:hover{border-color:var(--accent)}
+.lcard .num{width:32px;height:32px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;font-weight:600;font-size:.9rem;color:var(--muted);grid-row:span 2}
+.lcard .t{font-weight:600;font-family:var(--serif);font-size:1.08rem}
+.lcard .s{color:var(--muted);font-size:.93rem;grid-column:2}
+.lcard .m{color:var(--muted);font-size:.85rem;white-space:nowrap}
+.lcard.soon{opacity:.6;border-style:dashed;background:transparent}
+.is-read .num{background:var(--done);color:var(--surface)}
+.is-tried .m::after{content:" · ✓";color:var(--done)}
+.split{margin:0 0 14px}
+.split h3{margin-top:0}
+.split .decide{color:var(--muted);margin:0}
+.rules-list{list-style:none;padding:0;margin:0;counter-reset:r}
+.rules-list li{margin:0 0 12px}
+.rules-list .card{margin:0;display:grid;gap:10px}
+.rules-list .text{font:500 1.1rem/1.45 var(--serif)}
+.rules-list .from{font-size:.85rem;color:var(--muted)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}
+.plain-btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 14px;cursor:pointer;font-size:.92rem}
+.src{list-style:none;padding:0;margin:0}
+.src li{padding:12px 0;border-bottom:1px solid var(--line);margin:0}
+.src .d{color:var(--muted);font-size:.85rem}
+.src .in{font-size:.85rem;color:var(--muted)}
+.courses{list-style:none;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.courses li{margin:0}
+.ccard{display:flex;flex-direction:column;gap:8px;height:100%;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;color:var(--text);box-shadow:var(--shadow)}
+.ccard:hover{border-color:var(--accent)}
+.ccard .e{font-size:2rem;line-height:1}
+.ccard .t{font:600 1.2rem/1.3 var(--serif)}
+.ccard .s{color:var(--muted);font-size:.95rem;flex:1}
+.ccard .m{color:var(--muted);font-size:.85rem}
+footer.bottom{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:20px 0 32px}
+footer.bottom .wrap{display:flex;gap:6px 16px;flex-wrap:wrap}
+@media (max-width:560px){
+  body{font-size:1rem}
+  header.top .wrap{display:grid;grid-template-columns:1fr auto;gap:4px 8px}
+  .brand{margin:0;min-width:0}
+  nav.main{grid-column:1/-1;grid-row:2;flex-wrap:nowrap;overflow-x:auto;margin:0 -6px;scrollbar-width:none}
+  nav.main a{white-space:nowrap;padding:6px 8px}
+  .card{padding:16px}
+  .quiz .answer{padding-left:18px}
+  .pager{grid-template-columns:1fr}
+  .pager .next{grid-column:1}
+  .lcard{grid-template-columns:auto 1fr}
+  .lcard .m{grid-column:2}
+}
+@media print{
+  header.top,footer.bottom,.marks,.pager,.toolbar,.icon-btn,.skip,.check input{display:none!important}
+  body{background:#fff;color:#000}
+  .card{box-shadow:none;border-color:#ccc}
+  .quiz .answer{display:block}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap wide"><a class="brand" href="index.html"><span class="e" aria-hidden="true">🧭</span>Продакт-менеджмент с нуля</a><nav class="main" aria-label="Course"><a href="index.html">Уроки</a><a href="rules.html">Мои правила</a><a href="sources.html">Источники</a><a href="../">Все курсы</a></nav>
+<button class="icon-btn" type="button" data-theme-toggle aria-label="Theme"><svg class="only-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="only-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></div></header>
+<main><article class="wrap lesson"><nav class="crumbs"><a href="index.html">Уроки</a> · Часть 2. Проверить и измерить</nav><p class="eyebrow"><span>Урок 7 из 12</span><span>6 мин чтения</span></p><h1>Остаются ли люди</h1><section class="card summary"><h2>Коротко</h2><ul><li>Удержание (retention) — доля людей, которые вернулись через день, неделю или месяц после первого знакомства с продуктом. Считают его по когортам — группам, пришедшим в один день или неделю.</li><li>Если кривая удержания выходит на плато, продукт кому-то нужен. Если она ползёт к нулю, пользы нет, и реклама этого не исправит.</li><li>Чужие цифры — ориентир, а не цель. Сравнивайтесь с продуктами, которые решают ту же задачу и считают так же.</li></ul></section><section class="prose"><h2>Разбор</h2><h4>Когорта и кривая</h4>
+<p>GoPractice показывает расчёт на выдуманном приложении SuperApp. 26 августа его впервые открыли 1300 человек — это когорта. Через семь дней вернулись 505. Удержание седьмого дня — 505 / 1300, то есть 38%. Если посчитать так каждый день, получится кривая.</p>
+<p>Период выбирают по тому, как часто людям нужен продукт: для заметок — по дням, для такси — по неделям, для доски объявлений — по месяцам.</p>
+<p>Важнее всего форма кривой. Если продукт решает задачу лучше альтернатив, часть людей привыкает к нему, и кривая выравнивается: у SuperApp она к седьмой неделе держится около 31%. GoPractice называет такое плато одним из признаков того, что продукт нашёл свой рынок (product-market fit). Если ценности нет, кривая сползает к нулю.</p>
+<h4>С чем сравнивать</h4>
+<p>Ленни Рачицки с коллегами собрал ориентиры: сколько людей должно остаться через полгода. Для соцсетей хорошо около 25% и отлично около 45%, для подписок — 40% и 70%, для сервисов малого бизнеса — 60% и 80% (по опросу примерно двадцати специалистов по росту). Знаменатель при этом разный: у соцсети это зарегистрированные, у магазина — сделавшие хотя бы одну покупку, у подписки — начавшие платить.</p>
+<p>Брайан Бальфур, основатель Reforge, сам участвовал в подборке и всё же предупреждает: одну метрику компании считают по-разному, а у бенчмарков нет контекста. Он советует строить свою модель снизу вверх. Если удержание соцприложения выходит на плато 10%, а для большого бизнеса нужно 100 миллионов активных, придётся привлечь миллиард человек. Выдержит ли это ваш канал привлечения? GoPractice добавляет: мессенджер сравнивают с WhatsApp и Telegram, а не с такси.</p>
+<h4>Спросить людей</h4>
+<p>Удержание показывает, что люди делают. Шон Эллис придумал вопрос о том, что они чувствуют: «Насколько вы расстроитесь, если больше не сможете пользоваться продуктом?» Варианты: очень, немного, не расстроюсь. По его наблюдениям почти на сотне стартапов, те, кому рост давался трудно, почти всегда набирали меньше 40% «очень расстроюсь».</p>
+<h4>Типичная ошибка</h4>
+<p>Чинить удержание напоминаниями. Бальфур пишет, что удержание — следствие: его не поднять мозговым штурмом «идей для удержания». Нужно найти, что его создаёт, и чаще всего это активация — момент, когда новичок впервые получает пользу. GoPractice тоже считает, что напоминания мало влияют на ценность продукта.</p></section><section class="prose example"><h2>Пример</h2><p>Самую известную историю о вопросе Эллиса рассказал Рахул Вохра, основатель почтового клиента Superhuman. Два года команда писала код и не понимала, нужен ли продукт. Первый опрос дал 22% «очень расстроюсь». Вохра посмотрел, кто именно так ответил: основатели, руководители, менеджеры. Когда оставили только эти группы, доля выросла до 33%. Дальше половину плана отдали тому, что эти люди любят в продукте, а половину — тому, что мешало «немного расстроенным», прежде всего отсутствию мобильного приложения. Всплыли и неожиданные просьбы вроде календаря, который команда сама вряд ли поставила бы в план. Через три квартала, по словам Вохры, доля дошла до 58%.</p>
+<p>Учебный пример. Лиза — продакт приложения для планирования питания. Недельные когорты показывают: через восемь недель остаётся 12%, и кривая всё ещё снижается. Лиза отправляет опрос тем, кто открывал приложение хотя бы дважды за последние две недели, и получает 60 ответов. «Очень расстроюсь» ответили 18%. Среди них больше всего родителей маленьких детей, и пишут они об одном: приложение само составляет список покупок. Лиза предлагает на квартал сосредоточиться на родителях и списке покупок, а через месяц снова посмотреть на когорты.</p></section><section class="sources-note"><h2>Что говорят источники</h2><p>Четыре из восьми источников об удержании советуют смотреть на кривую по когортам и считать плато признаком ценности. Столько же предупреждают, что бенчмарк — ориентир, а не цель. Двое из восьми, Ленни и Бальфур, напоминают, что низкое удержание бывает допустимым при дешёвом привлечении: HubSpot первые пять лет жил с удержанием выручки ниже 100% (по данным Бальфура). PostHog возражает: много регистраций при плохом удержании он называет машиной оттока.</p>
+<p>Метод 40% поддерживают двое из четырёх источников о product-market fit, но оба опираются на рассказ самого Superhuman: статью в First Round написал Вохра, а Дэвид Каммингс пересказывает его интервью в подкасте. Цифры 22, 33 и 58% со стороны никто не проверял, а в конце статьи Вохра рекламирует свой платный метод. Бальфур напоминает, что универсальный порог без контекста вводит в заблуждение.</p></section><section class="card try"><div class="try-head"><h2>Попробуйте</h2><span class="chip">Глубокий фокус</span><span class="chip">25 минут</span></div><p>Если у вас есть данные продукта, возьмите четыре недельные когорты подряд и для каждой посчитайте долю вернувшихся на 1, 2, 4 и 8 неделе:</p>
+<blockquote><p>Удержание недели N = вернулись на неделе N / пришли на неделе 0 × 100%</p></blockquote>
+<p>Нарисуйте кривые на одном графике и ответьте: выходят ли они на плато? Лучше ли новые когорты старых?</p>
+<p>Если данных нет, задайте десяти знакомым вопросы о приложении, которым они пользуются:</p>
+<blockquote><p>Насколько вы расстроитесь, если больше не сможете им пользоваться: очень, немного, не расстроюсь?</p>
+<p>Кому, по-вашему, оно полезнее всего?</p>
+<p>Что главное оно вам даёт?</p></blockquote>
+<p>Посмотрите, чем ответившие «очень» отличаются от остальных.</p></section><section class="card rule"><h2>Правило</h2><p class="text">Я сужу о продукте по тому, остаются ли в нём люди, и сравниваю удержание только с похожими продуктами, посчитанными так же.</p><label class="check"><input type="checkbox" data-mark="rule-07"> Беру в свои правила</label></section><section class="quiz-sec"><h2>Проверьте себя</h2><p class="hint">Подумайте, потом откройте</p><details class="quiz"><summary>Кривая удержания падает первые три недели, а потом держится на 20%. Это плохо?</summary><div class="answer"><p>Скорее хороший знак: плато значит, что часть людей нашла в продукте пользу. Дальше стоит понять, кто эти люди, и сравнить уровень с похожими продуктами.</p></div></details>
+<details class="quiz"><summary>Коллега говорит: «У нас 30% через полгода, а у Ленни для подписок хорошо — 40%, мы провалились». Что уточнить?</summary><div class="answer"><p>Как посчитан знаменатель и похожа ли модель. И выдерживает ли ваш канал привлечения такое удержание: бенчмарк — ориентир, а не цель.</p></div></details>
+<details class="quiz"><summary>«Очень расстроятся» без продукта 25% опрошенных. Что делать?</summary><div class="answer"><p>Посмотреть, кто именно эти люди, и сосредоточиться на них: усилить то, что они любят, и убрать то, что мешает похожим на них.</p></div></details></section><section class="further"><h2>Почитать подробнее</h2><ul><li><a href="https://gopractice.io/product/retention-how-to-understand-calculate-and-improve-it/" rel="noopener" target="_blank">Retention: how to understand, calculate, and improve it</a> — расчёт удержания по когортам, плато и рычаги роста.</li><li><a href="https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/" rel="noopener" target="_blank">How Superhuman Built an Engine to Find Product Market Fit</a> — Рахул Вохра о вопросе «насколько вы расстроитесь» и о том, как по ответам менять план.</li><li><a href="https://davidcummings.org/2020/10/10/running-the-product-market-fit-engine-the-superhuman-way/" rel="noopener" target="_blank">Running the Product/Market Fit Engine the Superhuman Way</a> — короткий пересказ того же метода.</li></ul></section><div class="marks"><button class="toggle" type="button" data-mark="read-07">Прочитано</button><button class="toggle" type="button" data-mark="tried-07">Попробовано</button></div><p class="skip">Урок можно пропустить: ничего не сгорит, следующий урок просто следующий.</p><nav class="pager"><a class="prev" href="06-north-star.html"><small>← Назад</small>Одна главная метрика</a><a class="next" href="08-unit-economics.html"><small>Дальше →</small>Сколько стоит клиент</a></nav></article></main>
+<footer class="bottom"><div class="wrap wide"><span>Продакт-менеджмент с нуля</span><span>Обновлено: 2026-11-14</span><span>Курс собран навыком minicourse</span></div></footer>
+<script>
+(function(){
+  var root=document.documentElement, slug=root.getAttribute('data-course')||'';
+  function key(k){return 'minicourse:'+slug+':'+k}
+  function get(k){try{return localStorage.getItem(key(k))==='1'}catch(e){return false}}
+  function set(k,on){try{on?localStorage.setItem(key(k),'1'):localStorage.removeItem(key(k))}catch(e){}}
+  document.querySelectorAll('[data-theme-toggle]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var cur=root.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      root.dataset.theme=cur==='dark'?'light':'dark';
+      try{localStorage.setItem('minicourse-theme',root.dataset.theme)}catch(e){}
+    });
+  });
+  document.querySelectorAll('[data-mark]').forEach(function(el){
+    var k=el.getAttribute('data-mark');
+    if(el.type==='checkbox'){
+      el.checked=get(k);
+      el.addEventListener('change',function(){set(k,el.checked);sync()});
+    }else{
+      el.setAttribute('aria-pressed',get(k)?'true':'false');
+      el.addEventListener('click',function(){var on=el.getAttribute('aria-pressed')!=='true';el.setAttribute('aria-pressed',on?'true':'false');set(k,on);sync()});
+    }
+  });
+  function sync(){
+    var ids=(root.getAttribute('data-lessons')||'').split(',').filter(Boolean);
+    document.querySelectorAll('[data-lesson]').forEach(function(el){
+      var n=el.getAttribute('data-lesson');
+      el.classList.toggle('is-read',get('read-'+n));
+      el.classList.toggle('is-tried',get('tried-'+n));
+    });
+    var read=0,tried=0,kept=0,next=null;
+    ids.forEach(function(n){if(get('read-'+n))read++;else if(!next)next=n;if(get('tried-'+n))tried++;if(get('rule-'+n))kept++});
+    var bar=document.querySelector('[data-progress-bar]');
+    if(bar)bar.style.width=(ids.length?Math.round(read*100/ids.length):0)+'%';
+    var txt=document.querySelector('[data-progress-text]');
+    if(txt)txt.textContent=txt.getAttribute('data-template').replace('{read}',read).replace('{total}',ids.length).replace('{tried}',tried).replace('{kept}',kept);
+    var cta=document.querySelector('[data-cta]');
+    if(cta&&read>0&&next){var a=document.querySelector('[data-lesson="'+next+'"]');if(a&&a.getAttribute('href')){cta.href=a.getAttribute('href');cta.textContent=cta.getAttribute('data-continue')}}
+  }
+  var reset=document.querySelector('[data-reset]');
+  if(reset)reset.addEventListener('click',function(){
+    if(!confirm(reset.getAttribute('data-confirm')))return;
+    try{Object.keys(localStorage).forEach(function(k){if(k.indexOf('minicourse:'+slug+':')===0)localStorage.removeItem(k)})}catch(e){}
+    location.reload();
+  });
+  var pr=document.querySelector('[data-print]');
+  if(pr)pr.addEventListener('click',function(){window.print()});
+  sync();
+})();
+</script>
+</body>
+</html>
